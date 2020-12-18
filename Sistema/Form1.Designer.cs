@@ -137,7 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Sistema.Properties.Resources.programa;
+            this.BackgroundImage = global::Sistema.Properties.Resources.negro;
             this.ClientSize = new System.Drawing.Size(420, 258);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtNombre);

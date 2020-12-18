@@ -1,5 +1,4 @@
-﻿using Sistema;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,12 +10,11 @@ using System.Windows.Forms;
 
 namespace MenuDesplegable
 {
-    public partial class frmPrincipal : Form
+    public partial class Form3 : Form
     {
-        public frmPrincipal()
+        public Form3()
         {
             InitializeComponent();
-            label1.Text = "Usuario: " + Sistema.Session.usuario;
         }
 
         private void btnBoton1_Click(object sender, EventArgs e)
@@ -80,62 +78,6 @@ namespace MenuDesplegable
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            MostrarFormulario("V");
-
-        }
-       public void MostrarFormulario(string opcion)
-        {
-
-            Form f = new Form();
-
-
-
-            switch (opcion)
-            {
-                case "R":
-                    f = new Sistema.Registrarproducto();
-                        
-                    break;
-                case "V":
-                    f = new Sistema.ventas();
-
-                    break;
-                case "C":
-                    f = new Sistema.consulta();
-
-                    break;
-
-            }
-
-            panel1.Controls.Clear();
-
-            f.Dock = DockStyle.Fill;
-            f.TopLevel = false;
-            panel1.Controls.Add(f);
-            f.Show();
-
-        }
-
-        private void bunifuFlatButton2_Click(object sender, EventArgs e)
-        {
-           // Sistema.Registrarproducto ff = new Sistema.Registrarproducto();
-           // ff.Show();
-            MostrarFormulario("R");
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuFlatButton4_Click(object sender, EventArgs e)
-        {
-            MostrarFormulario("C");
 
         }
     }

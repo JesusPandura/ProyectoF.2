@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MenuDesplegable;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -55,6 +56,11 @@ namespace Sistema
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
         {
 
         }
